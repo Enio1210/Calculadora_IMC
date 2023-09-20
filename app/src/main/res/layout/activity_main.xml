@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+   >
+    <TextView
+        android:id="@+id/IMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMC"
+        android:layout_marginBottom="28dp"/>
+
+    <EditText
+        android:id="@+id/edttext_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu peso"
+        android:layout_below="@+id/IMC"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        />
+    <EditText
+        android:id="@+id/edttext_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttext_peso"
+        android:layout_marginTop="16dp"
+        android:hint="Digite sua altura"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+
+       />
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Click"
+        />
+
+</RelativeLayout>
